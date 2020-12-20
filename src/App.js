@@ -1,6 +1,7 @@
-import logo from './ba_full.png';
-import cover from './cover_photo.jpg';
-import map from './hd_maps.png'
+import logo from './assets/ba_full-bw.png';
+import cover from './assets/cover_photo.jpg';
+import map from './assets/hd_maps.jpg'
+import taipei from './assets/taipei.jpg';
 import './App.css';
 
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-        <Navbar bg="light" expand="lg" className="ba-navbar">
+        <Navbar expand="lg" className="ba-navbar">
             <div className="container">
                 <Navbar.Brand href="#home"><img alt="ba-logo" width="250px" src={logo}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -88,6 +89,7 @@ function App() {
                 <h4>
                     We're on a mission to make roads safer
                 </h4>
+                <img alt="taipei" src={taipei} className="post-image"/>
                 <p className="common">
                     Beyond Autonomy is an early-stage startup incorporated in Delaware and headquartered in Taipei. It
                     was founded by a group of Hult alumni with the vision of connecting vehicles to each other, the
@@ -104,6 +106,12 @@ function App() {
                 </p>
             </a>
         </div>
+        <footer className="footer">
+            <div className="container">
+                <span className="footer-title">Beyond Autonomy Technologies</span><br/>
+                No. 236, Minsheng West Road, Datong District, Taipei City 103, Taiwan
+            </div>
+        </footer>
     </div>
   );
 }
