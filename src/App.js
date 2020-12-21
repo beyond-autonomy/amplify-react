@@ -1,7 +1,8 @@
 import logo from './assets/ba_full-bw.png';
 import cover from './assets/cover_photo.jpg';
-import map from './assets/hd_maps.jpg'
-import taipei from './assets/taipei.jpg';
+import map from './assets/hd_maps.jpg';
+import solution from './assets/solution.jpg';
+import safety from './assets/road_safety.jpg';
 import './App.css';
 
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,16 +12,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-        <Navbar expand="lg" className="ba-navbar">
+        <Navbar expand="lg" className="ba-navbar fixed-top">
             <div className="container">
                 <Navbar.Brand href="#home"><img alt="ba-logo" width="250px" src={logo}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#product">Solution</Nav.Link>
+                        <Nav.Link href="#hd-maps">HD Maps</Nav.Link>
+                        <Nav.Link href="#solution">Solution</Nav.Link>
                         <Nav.Link href="#company">Company</Nav.Link>
-                        <Nav.Link href="#blog">Blog</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </div>
@@ -38,8 +38,8 @@ function App() {
         </div>
         <div className="container">
             {/* eslint-disable-next-line */}
-            <a id="challenge" >
-                <h4>
+            <a id="hd-maps" >
+                <h4 className="anchor-header">
                     High Definition (HD) Maps
                 </h4>
                 <img alt="hd-map" src={map} className="post-image"/>
@@ -57,17 +57,18 @@ function App() {
                 <p className="common-last">
                     First, HD maps require the same set of hardware used for self-driving cars, which typically
                     employ a production-grade LiDAR (Light Detection And Ranging) sensor that costs approximately
-                    US$75,000. Next, these maps are produced by processing the fusion of sensor data that generates
-                    about 700,000 data points per second. Finally, it requires a lot of these expensive cars to be
-                    driving around to achieve near real-time monitoring of roads, of which more than 64 million
+                    US$75,000. Next, these maps are produced by processing the fusion of sensor data where LiDAR alone
+                    generates about 700,000 data points per second. Finally, it requires a lot of these expensive cars
+                    to be driving around to achieve near real-time monitoring of roads, of which more than 64 million
                     kilometers (as of 2013) have been constructed across the globe.
                 </p>
             </a>
             {/* eslint-disable-next-line */}
             <a id="solution" >
-                <h4>
+                <h4 className="anchor-header">
                     Our Solution: Stereo Vision, a Shared Map, and Processing on the Edge
                 </h4>
+                <img alt="solution" src={solution} className="post-image"/>
                 <p className="common">
                     First, we use stereo vision -- the simultaneous capture using left and right cameras -- to create
                     depth perception, enabling precise distance measurement using trigonometry and the disparity between
@@ -86,17 +87,19 @@ function App() {
             </a>
             {/* eslint-disable-next-line */}
             <a id="company" >
-                <h4>
-                    We're on a mission to make roads safer
+                <h4 className="anchor-header">
+                    We're on a mission to make roads safe
                 </h4>
-                <img alt="taipei" src={taipei} className="post-image"/>
+                <img alt="road-safety" src={safety} className="post-image"/>
                 <p className="common">
                     Beyond Autonomy is an early-stage startup incorporated in Delaware and headquartered in Taipei. It
-                    was founded by a group of Hult alumni with the vision of connecting vehicles to each other, the
-                    infrastructure, and the cloud to give them access to information beyond what their onboard sensors
-                    can provide. They believe in a future where, regardless of whether cars are self-driving or not,
-                    having access to this kind of information would enable smarter driving decisions and effectively
-                    make roads safe for everyone -- commuters and vulnerable road users alike.
+                    was founded with the vision of connecting vehicles to each other, the infrastructure, and the cloud
+                    to give them access to information beyond what their onboard sensors can provide.
+                </p>
+                <p className="common">
+                    We believe in a future where, regardless of whether cars are self-driving or not, having access to
+                    this kind of information would enable smarter driving decisions and effectively make roads safe for
+                    everyone -- commuters and vulnerable road users alike.
                 </p>
                 <p className="common-last">
                     Our team is committed to Taiwan. We see this project as a platform that would not only showcase
