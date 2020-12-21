@@ -4,12 +4,9 @@
     <list default="true" id="068b2c35-c5ca-464f-a2fe-5f88ac31d7e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cover_photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/cover_photo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hd_maps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/hd_maps.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hd_maps.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607949329914</updated>
       <workItem from="1607949333191" duration="370000" />
-      <workItem from="1607949843767" duration="18457000" />
+      <workItem from="1607949843767" duration="21641000" />
     </task>
     <servers />
   </component>
